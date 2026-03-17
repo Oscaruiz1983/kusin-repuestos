@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <title>Kusin Repuestos</title>
 
-<!-- Mercado Pago SDK -->
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 
 <style>
-body { margin:0; font-family:Arial; background:#fff; }
-header { background:black; color:white; padding:20px; text-align:center; }
+body { margin:0; font-family:Arial; }
+header { background:black; color:white; text-align:center; padding:20px; }
 .products { display:flex; justify-content:center; gap:20px; padding:20px; }
 .card { border:1px solid #ccc; padding:20px; width:200px; text-align:center; }
 button { background:black; color:white; border:none; padding:10px; cursor:pointer; }
@@ -30,15 +29,19 @@ button { background:black; color:white; border:none; padding:10px; cursor:pointe
 <button onclick="pagar()">Comprar</button>
 </div>
 
+<div class="card">
+<h3>Pastillas de freno</h3>
+<p>$25.000</p>
+<button onclick="pagar()">Comprar</button>
+</div>
+
 </section>
 
 <script>
-// 🔑 TU PUBLIC KEY (TEST)
 const mp = new MercadoPago('TEST-b03c792b-30f0-48b4-9515-398462d498a5');
 
-// ⚠️ SIMULACIÓN DE PAGO (sin backend aún)
 function pagar(){
-    alert("Simulación de pago en modo TEST 🚀");
+    alert("Pago en modo prueba funcionando 🚀");
 }
 </script>
 
